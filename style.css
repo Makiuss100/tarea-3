@@ -1,0 +1,76 @@
+.contenedor {
+    background-color: darkgreen;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav    nav     nav"
+                        "section section ads"
+                        "foot   foot  foot"
+                        "rrss   rrss   rrss ";
+}
+.contenedor .header {
+    background-color: chartreuse;
+    grid-column: header;
+}
+.contenedor .nav {
+    background-color: cadetblue;
+    grid-column: nav;
+}
+.contenedor .section {
+    background-color: aquamarine;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "contenido1 contenido2";
+    grid-template-columns: 1fr 1fr;
+    grid-column: section;
+}
+.contenedor .ads {
+    background-color: aqua;
+    grid-column: ads;
+}
+.contenedor .foot {
+    background-color: blueviolet;
+    grid-column: foot;
+}
+.contenedor .rrss {
+    background-color: dodgerblue;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-areas: "contenido1 contenido2";
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-column: rrss;
+    
+}
+
+
+.section .section1 {
+    background-color: rgb(134, 63, 63);
+    grid-row: 1fr 1fr;
+}
+.contenedor .section .section2 {
+    background-color: rgb(73, 9, 9);
+    grid-row: 1fr 1fr;
+}
+.contenedor .rrss .face {
+    background-color: coral;
+
+}
+.contenedor .rrss .redes {
+    background-color: rgb(73, 24, 6)8, 32, 11);
+
+}
+.contenedor .rrss .tube {
+    background-color: cornflowerblue;
+
+}
+.contenedor .ads .publicidad1 {
+    background-color: chocolate;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+}
